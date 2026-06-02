@@ -6,312 +6,191 @@
     <title>Ipséité | Prothésiste ongulaire au Perréon</title>
     <meta
       name="description"
-      content="Ipséité, prothésiste ongulaire au Perréon. Manucure, gel, semi-permanent, nail art délicat et rendez-vous beauté dans une ambiance campagne chic."
+      content="Ipséité, prothésiste ongulaire au Perréon. Ongles en gel, gainage, semi-permanent et nail art délicat dans une ambiance campagne chic."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=7" />
+    <link rel="stylesheet" href="styles.css?v=horizontal-1" />
   </head>
   <body>
-    <header class="site-header" data-header>
+    <header class="site-header">
       <a class="brand" href="#accueil" aria-label="Ipséité, accueil">
-        <span class="brand-logo">
-          <img src="assets/ipseite-logo-clean.jpg" alt="Logo Ipséité" />
-        </span>
-        <span class="brand-place">Le Perréon</span>
+        <img src="assets/ipseite-logo-clean.jpg" alt="Logo Ipséité" />
       </a>
-      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" data-menu-toggle>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="site-nav" data-nav>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="#atelier">Atelier</a>
         <a href="#prestations">Prestations</a>
-        <a href="#atelier">L'atelier</a>
+        <a href="#choix">Choix</a>
         <a href="#tarifs">Tarifs</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-cta" href="#reservation">Réserver</a>
+        <a class="nav-cta" href="#contact">Réserver</a>
       </nav>
+      <div class="scroll-hint" aria-hidden="true">Faire défiler</div>
     </header>
 
-    <main>
-      <section class="hero" id="accueil">
-        <div class="hero-media" aria-hidden="true">
-          <div class="hero-photo">
-            <img src="assets/hero-atelier.png" alt="" />
-          </div>
-          <div class="logo-medallion">
-            <img src="assets/ipseite-logo-clean.jpg" alt="" />
-          </div>
-          <div class="pressed-flower flower-one"></div>
-          <div class="pressed-flower flower-two"></div>
+    <main class="horizontal-shell" data-horizontal>
+      <section class="panel hero-panel" id="accueil" aria-label="Ipséité">
+        <div class="hero-watermark" aria-hidden="true">
+          <img src="assets/ipseite-logo-clean.jpg" alt="" />
         </div>
-        <div class="hero-content">
+        <div class="hero-brand-card">
+          <img src="assets/ipseite-logo-clean.jpg" alt="Ipséité, la beauté d'être soi" />
+        </div>
+        <div class="hero-copy">
           <p class="eyebrow">Prothésiste ongulaire au Perréon</p>
-          <h1>Ipséité</h1>
-          <p class="hero-subtitle">La beauté d'être soi, jusque dans le détail des mains.</p>
-          <p class="hero-text">
-            Un atelier intime pour des poses élégantes, naturelles ou créatives, dans une atmosphère douce entre maison de campagne, soin précis et féminité assumée.
+          <h1>La beauté d'être soi, jusque dans le détail des mains.</h1>
+          <p>
+            Une identité douce, précise et féminine: des poses élégantes, naturelles ou créatives, pensées dans une ambiance campagne chic.
           </p>
-          <div class="hero-note">
-            <span>Nouvelle adresse beauté au coeur du Beaujolais</span>
-            <span>Gel, gainage, semi-permanent, nail art fin</span>
-          </div>
           <div class="hero-actions">
-            <a class="button primary" href="#reservation">Prendre rendez-vous</a>
-            <a class="button secondary" href="#prestations">Voir les prestations</a>
-          </div>
-          <dl class="hero-facts">
-            <div>
-              <dt>Lieu</dt>
-              <dd>Le Perréon</dd>
-            </div>
-            <div>
-              <dt>Style</dt>
-              <dd>Naturel, chic, minutieux</dd>
-            </div>
-            <div>
-              <dt>Ambiance</dt>
-              <dd>Campagne chic</dd>
-            </div>
-          </dl>
-        </div>
-      </section>
-
-      <section class="intro-band" aria-label="Signature Ipséité">
-        <p>
-          Des ongles soignés sans effet figé: une pose pensée pour votre rythme, votre carnation, votre longueur idéale et l'allure que vous aimez porter au quotidien.
-        </p>
-      </section>
-
-      <section class="signature-story">
-        <div class="story-visual">
-          <img src="assets/mains-fleurs.png" alt="Mains manucurées tenant un bouquet de fleurs champêtres" />
-        </div>
-        <div class="story-copy">
-          <p class="eyebrow">Campagne chic</p>
-          <h2>Une beauté douce, mais jamais effacée.</h2>
-          <p>
-            Ipséité n'est pas un simple rendez-vous ongles. C'est un moment à part, entre lumière naturelle, gestes minutieux et choix de couleurs qui racontent quelque chose de vous.
-          </p>
-          <div class="story-metrics" aria-label="Promesses Ipséité">
-            <span>Finitions nettes</span>
-            <span>Conseil couleur</span>
-            <span>Rendu élégant</span>
-          </div>
-        </div>
-        <div class="story-illustration" aria-hidden="true">
-          <img src="assets/illustration-botanique.png" alt="" />
-        </div>
-      </section>
-
-      <section class="section split-section" id="prestations">
-        <div class="section-heading">
-          <p class="eyebrow">Prestations</p>
-          <h2>Des mains nettes, féminines, faites pour durer.</h2>
-        </div>
-        <div class="service-grid">
-          <article class="service-card">
-            <span class="service-number">01</span>
-            <h3>Gainage naturel</h3>
-            <p>Renfort discret sur ongles naturels, idéal pour une tenue impeccable avec un rendu fin et lumineux.</p>
-          </article>
-          <article class="service-card">
-            <span class="service-number">02</span>
-            <h3>Gel & extensions</h3>
-            <p>Construction adaptée à votre main, de la longueur courte élégante à une silhouette plus affirmée.</p>
-          </article>
-          <article class="service-card">
-            <span class="service-number">03</span>
-            <h3>Semi-permanent</h3>
-            <p>Couleur brillante, pose rapide, finition propre pour garder des mains fraîches plusieurs semaines.</p>
-          </article>
-          <article class="service-card">
-            <span class="service-number">04</span>
-            <h3>Nail art délicat</h3>
-            <p>French revisitée, fleurs fines, chrome léger, détails dorés ou accent nails selon l'envie du moment.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="atelier" id="atelier">
-        <div class="atelier-copy">
-          <p class="eyebrow">L'atelier</p>
-          <h2>Un rendez-vous calme, précis, jamais expédié.</h2>
-          <p>
-            Ipséité cultive une beauté proche de soi: gestes sûrs, conseil couleur, hygiène rigoureuse, finitions nettes. On choisit ensemble ce qui vous ressemble, sans pousser à l'excès.
-          </p>
-          <div class="atelier-list">
-            <span>Conseil morphologie de l'ongle</span>
-            <span>Préparation douce des cuticules</span>
-            <span>Palette nude, rose, bordeaux, sauge et dorés fins</span>
-          </div>
-        </div>
-        <div class="atelier-board" aria-label="Inspirations campagne chic">
-          <div class="mood mood-large">
-            <span>French lait</span>
-          </div>
-          <div class="mood mood-rose">
-            <span>Vieux rose</span>
-          </div>
-          <div class="mood mood-sage">
-            <span>Sauge</span>
-          </div>
-          <div class="mood mood-gold">
-            <span>Bijou fin</span>
+            <a class="button primary" href="#choix">Voir les choix</a>
+            <a class="button secondary" href="#contact">Prendre rendez-vous</a>
           </div>
         </div>
       </section>
 
-      <section class="experience-strip" aria-label="Ambiance Ipséité">
-        <div class="experience-item">
+      <section class="panel atelier-panel" id="atelier">
+        <div class="panel-kicker">
           <span>01</span>
-          <strong>Un accueil comme à la maison</strong>
-          <p>Une ambiance calme, lumineuse, loin du salon impersonnel.</p>
+          <p>Maison Ipséité</p>
         </div>
-        <div class="experience-item">
+        <div class="atelier-image">
+          <img src="assets/mains-fleurs.png" alt="Mains manucurées tenant des fleurs champêtres" />
+        </div>
+        <div class="atelier-copy">
+          <p class="eyebrow">Campagne chic</p>
+          <h2>Un rendez-vous calme, lumineux, jamais impersonnel.</h2>
+          <p>
+            Ici, l'ongle n'est pas seulement verni. Il est observé, préparé, conseillé, puis travaillé pour garder une allure fine et durable.
+          </p>
+          <ul class="signature-list">
+            <li>Conseil couleur selon la peau et le style</li>
+            <li>Préparation douce et finitions nettes</li>
+            <li>Palette nude, bordeaux, lait, sauge et doré fin</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="panel services-panel" id="prestations">
+        <div class="panel-kicker">
           <span>02</span>
-          <strong>Une pose qui respecte la main</strong>
-          <p>Longueur, forme et couleur sont choisies avec mesure.</p>
+          <p>Prestations</p>
         </div>
-        <div class="experience-item">
+        <div class="services-heading">
+          <p class="eyebrow">Sur mesure</p>
+          <h2>La bonne technique, pas la pose standard.</h2>
+        </div>
+        <div class="service-track">
+          <article class="service-card">
+            <span>Gel</span>
+            <h3>Construction élégante</h3>
+            <p>Pour structurer, allonger ou corriger avec un rendu fin et propre.</p>
+          </article>
+          <article class="service-card">
+            <span>Gainage</span>
+            <h3>Renfort naturel</h3>
+            <p>Idéal pour garder ses ongles, gagner en tenue et conserver une main légère.</p>
+          </article>
+          <article class="service-card">
+            <span>Semi</span>
+            <h3>Couleur brillante</h3>
+            <p>Une pose nette, rapide, lumineuse, parfaite pour le quotidien.</p>
+          </article>
+          <article class="service-card">
+            <span>Art</span>
+            <h3>Détail signature</h3>
+            <p>Fleurs fines, trait doré, french revisitée ou accent nail délicat.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel choices-panel" id="choix">
+        <div class="panel-kicker">
           <span>03</span>
-          <strong>Le détail qui change tout</strong>
-          <p>Un filet doré, une fleur fine, une brillance parfaite.</p>
+          <p>Choisir son allure</p>
         </div>
-      </section>
-
-      <section class="section gallery-section" aria-label="Galerie d'inspirations">
-        <div class="section-heading compact">
-          <p class="eyebrow">Inspirations</p>
-          <h2>Choisissez l'allure, Ipséité affine le détail.</h2>
+        <div class="choices-intro">
+          <p class="eyebrow">Inspirations illustrées</p>
+          <h2>Quatre directions, puis le détail qui vous ressemble.</h2>
         </div>
-        <div class="filter-bar" role="tablist" aria-label="Filtrer les inspirations">
-          <button class="filter active" type="button" data-filter="all">Tout</button>
-          <button class="filter" type="button" data-filter="naturel">Naturel</button>
-          <button class="filter" type="button" data-filter="chic">Chic</button>
-          <button class="filter" type="button" data-filter="art">Nail art</button>
-        </div>
-        <div class="gallery-grid" data-gallery>
-          <article class="look-card" data-kind="naturel">
-            <div class="look-visual visual-milk"></div>
-            <h3>Baby boomer laiteux</h3>
-            <p>Une transition douce, lumineuse, facile à porter.</p>
+        <div class="choice-grid">
+          <article class="choice-card">
+            <img src="assets/choice-nude.png" alt="Manucure nude naturelle" />
+            <div>
+              <span>Naturel</span>
+              <h3>Nude seconde peau</h3>
+              <p>Discret, soigné, lumineux.</p>
+            </div>
           </article>
-          <article class="look-card" data-kind="chic">
-            <div class="look-visual visual-wine"></div>
-            <h3>Bordeaux de vigne</h3>
-            <p>Une couleur profonde, parfaite avec des bijoux dorés.</p>
+          <article class="choice-card">
+            <img src="assets/choice-french.png" alt="French manucure laiteuse" />
+            <div>
+              <span>Intemporel</span>
+              <h3>French lait</h3>
+              <p>Fine, fraîche, jamais figée.</p>
+            </div>
           </article>
-          <article class="look-card" data-kind="art">
-            <div class="look-visual visual-flower"></div>
-            <h3>Fleurs fines</h3>
-            <p>Motifs délicats, dessinés pour rester élégants.</p>
+          <article class="choice-card">
+            <img src="assets/choice-burgundy.png" alt="Manucure bordeaux chic" />
+            <div>
+              <span>Caractère</span>
+              <h3>Bordeaux de vigne</h3>
+              <p>Chic, profond, très Beaujolais.</p>
+            </div>
           </article>
-          <article class="look-card" data-kind="naturel">
-            <div class="look-visual visual-nude"></div>
-            <h3>Nude sur mesure</h3>
-            <p>La teinte discrète qui épouse vraiment la peau.</p>
-          </article>
-          <article class="look-card" data-kind="chic">
-            <div class="look-visual visual-pearl"></div>
-            <h3>Reflet nacré</h3>
-            <p>Un voile subtil pour accrocher la lumière.</p>
-          </article>
-          <article class="look-card" data-kind="art">
-            <div class="look-visual visual-gold"></div>
-            <h3>Filet doré</h3>
-            <p>Un accent précieux, sans surcharge.</p>
+          <article class="choice-card">
+            <img src="assets/choice-floral.png" alt="Nail art floral délicat" />
+            <div>
+              <span>Signature</span>
+              <h3>Fleurs fines</h3>
+              <p>Un motif délicat, posé avec mesure.</p>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="pricing" id="tarifs">
+      <section class="panel pricing-panel" id="tarifs">
+        <div class="panel-kicker">
+          <span>04</span>
+          <p>Tarifs</p>
+        </div>
         <div class="pricing-copy">
-          <p class="eyebrow">Tarifs indicatifs</p>
-          <h2>Une grille claire, ajustée selon votre pose.</h2>
-          <p>Les prix exacts sont confirmés à la réservation selon la longueur, l'état des ongles et le niveau de nail art souhaité.</p>
+          <p class="eyebrow">Clair et ajusté</p>
+          <h2>Un prix indicatif, puis un conseil selon vos ongles.</h2>
+          <p>La longueur, l'état de l'ongle et le niveau de détail peuvent faire varier la prestation.</p>
         </div>
         <div class="price-list">
-          <div class="price-row">
-            <span>Pose complète gel</span>
-            <strong>à partir de 55 EUR</strong>
-          </div>
-          <div class="price-row">
-            <span>Remplissage</span>
-            <strong>à partir de 42 EUR</strong>
-          </div>
-          <div class="price-row">
-            <span>Gainage naturel</span>
-            <strong>à partir de 38 EUR</strong>
-          </div>
-          <div class="price-row">
-            <span>Semi-permanent mains</span>
-            <strong>à partir de 30 EUR</strong>
-          </div>
-          <div class="price-row">
-            <span>Nail art</span>
-            <strong>sur devis</strong>
-          </div>
+          <div><span>Pose complète gel</span><strong>à partir de 55 EUR</strong></div>
+          <div><span>Remplissage</span><strong>à partir de 42 EUR</strong></div>
+          <div><span>Gainage naturel</span><strong>à partir de 38 EUR</strong></div>
+          <div><span>Semi-permanent</span><strong>à partir de 30 EUR</strong></div>
+          <div><span>Nail art</span><strong>sur devis</strong></div>
         </div>
       </section>
 
-      <section class="ritual">
-        <div class="ritual-step">
-          <span>1</span>
-          <h3>On échange</h3>
-          <p>Forme, longueur, contraintes métier, couleurs que vous aimez porter.</p>
+      <section class="panel contact-panel" id="contact">
+        <div class="contact-art" aria-hidden="true">
+          <img src="assets/illustration-botanique.png" alt="" />
         </div>
-        <div class="ritual-step">
-          <span>2</span>
-          <h3>On prépare</h3>
-          <p>Base propre, cuticules nettes, matière posée avec patience.</p>
-        </div>
-        <div class="ritual-step">
-          <span>3</span>
-          <h3>On signe</h3>
-          <p>Finition brillante, photo souvenir, conseils pour prolonger la tenue.</p>
-        </div>
-      </section>
-
-      <section class="reservation" id="reservation">
-        <img class="reservation-art" src="assets/illustration-botanique.png" alt="" aria-hidden="true" />
-        <div>
+        <div class="contact-copy">
           <p class="eyebrow">Réservation</p>
           <h2>Un moment pour soi, au coeur du Beaujolais.</h2>
-          <p>
-            Pour finaliser le site, il suffira de relier ce bouton à Planity, Treatwell, Instagram, WhatsApp ou un formulaire selon son outil de réservation préféré.
-          </p>
+          <p>Sur rendez-vous uniquement, au Perréon. Le bouton pourra être relié à Instagram, WhatsApp, Planity ou un formulaire.</p>
+          <a class="button primary" href="mailto:contact@ipseite.fr?subject=Demande%20de%20rendez-vous%20Ips%C3%A9it%C3%A9">Demander un rendez-vous</a>
         </div>
-        <a class="button primary large" href="mailto:contact@ipseite.fr?subject=Demande%20de%20rendez-vous%20Ips%C3%A9it%C3%A9">Demander un rendez-vous</a>
-      </section>
-
-      <section class="contact" id="contact">
-        <div class="contact-card">
-          <p class="eyebrow">Contact</p>
-          <h2>Ipséité</h2>
-          <address>
-            Prothésiste ongulaire<br />
-            Le Perréon, Beaujolais<br />
-            Sur rendez-vous uniquement
-          </address>
-        </div>
-        <div class="contact-details">
-          <a href="tel:+33000000000">Téléphone à renseigner</a>
+        <address class="contact-details">
+          <span>Ipséité</span>
+          <span>Le Perréon</span>
           <a href="mailto:contact@ipseite.fr">contact@ipseite.fr</a>
-          <a href="#" aria-label="Instagram Ipséité">Instagram</a>
-        </div>
+          <a href="tel:+33000000000">Téléphone à renseigner</a>
+        </address>
       </section>
     </main>
 
-    <footer class="footer">
-      <span>Ipséité, la beauté d'être soi</span>
-      <a href="#accueil">Retour en haut</a>
-    </footer>
-
-    <script src="script.js?v=7"></script>
+    <div class="progress" aria-hidden="true"><span data-progress></span></div>
+    <script src="script.js?v=horizontal-1"></script>
   </body>
 </html>
