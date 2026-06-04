@@ -1,0 +1,38 @@
+{
+  "brand": {
+    "name": "Ipséité",
+    "tagline": "La beauté d'être soi",
+    "location": "Le Perréon"
+  },
+  "seo": {
+    "title": "Ipséité | Prothésiste ongulaire au Perréon",
+    "description": "Ongles en gel, gainage, semi-permanent et nail art délicat au Perréon, dans une ambiance campagne chic."
+  },
+  "contact": {
+    "email": "contact@ipseite.fr",
+    "phone": "+33000000000",
+    "instagram": ""
+  },
+  "services": [
+    {
+      "name": "Pose complète gel",
+      "price": "à partir de 55 EUR"
+    },
+    {
+      "name": "Remplissage",
+      "price": "à partir de 42 EUR"
+    },
+    {
+      "name": "Gainage naturel",
+      "price": "à partir de 38 EUR"
+    },
+    {
+      "name": "Semi-permanent",
+      "price": "à partir de 30 EUR"
+    },
+    {
+      "name": "Nail art",
+      "price": "sur devis"
+    }
+  ]
+}

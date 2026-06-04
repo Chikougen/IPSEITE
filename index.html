@@ -8,6 +8,20 @@
       name="description"
       content="Ipséité, prothésiste ongulaire au Perréon. Ongles en gel, gainage, semi-permanent et nail art délicat dans une ambiance campagne chic."
     />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#713744" />
+    <link rel="canonical" href="https://chikougen.github.io/IPSEITE/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Ipséité" />
+    <meta property="og:title" content="Ipséité | Prothésiste ongulaire au Perréon" />
+    <meta property="og:description" content="Ongles en gel, gainage, semi-permanent et nail art délicat au Perréon, dans une ambiance campagne chic." />
+    <meta property="og:url" content="https://chikougen.github.io/IPSEITE/" />
+    <meta property="og:image" content="https://chikougen.github.io/IPSEITE/assets/ipseite-logo-clean.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ipséité | Prothésiste ongulaire au Perréon" />
+    <meta name="twitter:description" content="Prothésiste ongulaire au Perréon: gel, gainage, semi-permanent et nail art délicat." />
+    <meta name="twitter:image" content="https://chikougen.github.io/IPSEITE/assets/ipseite-logo-clean.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +29,30 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css?v=horizontal-2" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BeautySalon",
+        "name": "Ipséité",
+        "description": "Prothésiste ongulaire au Perréon: gel, gainage, semi-permanent et nail art délicat.",
+        "url": "https://chikougen.github.io/IPSEITE/",
+        "image": "https://chikougen.github.io/IPSEITE/assets/ipseite-logo-clean.jpg",
+        "priceRange": "€€",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Le Perréon",
+          "addressRegion": "Auvergne-Rhône-Alpes",
+          "addressCountry": "FR"
+        },
+        "areaServed": ["Le Perréon", "Beaujolais", "Rhône"],
+        "makesOffer": [
+          { "@type": "Offer", "name": "Pose complète gel" },
+          { "@type": "Offer", "name": "Gainage naturel" },
+          { "@type": "Offer", "name": "Semi-permanent" },
+          { "@type": "Offer", "name": "Nail art" }
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -193,11 +231,11 @@
           <p>La longueur, l'état de l'ongle et le niveau de détail peuvent faire varier la prestation.</p>
         </div>
         <div class="price-list">
-          <div><span>Pose complète gel</span><strong>à partir de 55 EUR</strong></div>
-          <div><span>Remplissage</span><strong>à partir de 42 EUR</strong></div>
-          <div><span>Gainage naturel</span><strong>à partir de 38 EUR</strong></div>
-          <div><span>Semi-permanent</span><strong>à partir de 30 EUR</strong></div>
-          <div><span>Nail art</span><strong>sur devis</strong></div>
+          <div><span data-service-name="0">Pose complète gel</span><strong data-service-price="0">à partir de 55 EUR</strong></div>
+          <div><span data-service-name="1">Remplissage</span><strong data-service-price="1">à partir de 42 EUR</strong></div>
+          <div><span data-service-name="2">Gainage naturel</span><strong data-service-price="2">à partir de 38 EUR</strong></div>
+          <div><span data-service-name="3">Semi-permanent</span><strong data-service-price="3">à partir de 30 EUR</strong></div>
+          <div><span data-service-name="4">Nail art</span><strong data-service-price="4">sur devis</strong></div>
         </div>
       </section>
 
@@ -209,13 +247,13 @@
           <p class="eyebrow">Réservation</p>
           <h2>Un moment pour soi, au coeur du Beaujolais.</h2>
           <p>Sur rendez-vous uniquement, au Perréon. Le bouton pourra être relié à Instagram, WhatsApp, Planity ou un formulaire.</p>
-          <a class="button primary" href="mailto:contact@ipseite.fr?subject=Demande%20de%20rendez-vous%20Ips%C3%A9it%C3%A9">Demander un rendez-vous</a>
+          <a class="button primary" data-contact-email-link href="mailto:contact@ipseite.fr?subject=Demande%20de%20rendez-vous%20Ips%C3%A9it%C3%A9">Demander un rendez-vous</a>
         </div>
         <address class="contact-details">
           <span>Ipséité</span>
           <span>Le Perréon</span>
-          <a href="mailto:contact@ipseite.fr">contact@ipseite.fr</a>
-          <a href="tel:+33000000000">Téléphone à renseigner</a>
+          <a data-contact-email href="mailto:contact@ipseite.fr">contact@ipseite.fr</a>
+          <a data-contact-phone href="tel:+33000000000">Téléphone à renseigner</a>
         </address>
       </section>
     </main>

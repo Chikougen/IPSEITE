@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chikougen.github.io/IPSEITE/sitemap.xml

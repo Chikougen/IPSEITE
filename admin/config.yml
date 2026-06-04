@@ -1,0 +1,47 @@
+backend:
+  name: github
+  repo: Chikougen/IPSEITE
+  branch: main
+
+site_url: https://chikougen.github.io/IPSEITE/
+display_url: https://chikougen.github.io/IPSEITE/
+logo_url: https://chikougen.github.io/IPSEITE/assets/ipseite-logo-clean.jpg
+
+media_folder: assets/uploads
+public_folder: assets/uploads
+
+collections:
+  - name: "site"
+    label: "Site Ipséité"
+    files:
+      - file: "content/site.json"
+        label: "Informations principales"
+        name: "main"
+        format: "json"
+        fields:
+          - label: "Marque"
+            name: "brand"
+            widget: "object"
+            fields:
+              - { label: "Nom", name: "name", widget: "string" }
+              - { label: "Signature", name: "tagline", widget: "string" }
+              - { label: "Lieu", name: "location", widget: "string" }
+          - label: "Référencement"
+            name: "seo"
+            widget: "object"
+            fields:
+              - { label: "Titre SEO", name: "title", widget: "string" }
+              - { label: "Description SEO", name: "description", widget: "text" }
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Téléphone", name: "phone", widget: "string" }
+              - { label: "Instagram", name: "instagram", widget: "string", required: false }
+          - label: "Prestations"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Nom", name: "name", widget: "string" }
+              - { label: "Prix", name: "price", widget: "string" }
