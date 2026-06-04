@@ -1,6 +1,8 @@
 const shell = document.querySelector("[data-horizontal]");
 const progress = document.querySelector("[data-progress]");
 const navLinks = document.querySelectorAll('a[href^="#"]');
+let wheelFrame = null;
+let wheelDelta = 0;
 
 const updateProgress = () => {
   if (!shell || !progress) return;
@@ -9,16 +11,44 @@ const updateProgress = () => {
   progress.style.width = `${Math.max(0, Math.min(1, ratio)) * 100}%`;
 };
 
-shell?.addEventListener(
+const applyWheel = () => {
+  if (!shell) return;
+  shell.scrollLeft += wheelDelta;
+  wheelDelta = 0;
+  wheelFrame = null;
+};
+
+window.addEventListener(
   "wheel",
   (event) => {
-    if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
-      event.preventDefault();
-      shell.scrollLeft += event.deltaY;
+    if (!shell) return;
+
+    const delta = Math.abs(event.deltaX) > Math.abs(event.deltaY) ? event.deltaX : event.deltaY;
+    if (!delta) return;
+
+    event.preventDefault();
+    wheelDelta += delta;
+
+    if (!wheelFrame) {
+      wheelFrame = requestAnimationFrame(applyWheel);
     }
   },
   { passive: false }
 );
+
+window.addEventListener("keydown", (event) => {
+  if (!shell) return;
+
+  if (event.key === "ArrowRight" || event.key === "PageDown") {
+    event.preventDefault();
+    shell.scrollBy({ left: window.innerWidth, behavior: "smooth" });
+  }
+
+  if (event.key === "ArrowLeft" || event.key === "PageUp") {
+    event.preventDefault();
+    shell.scrollBy({ left: -window.innerWidth, behavior: "smooth" });
+  }
+});
 
 shell?.addEventListener("scroll", updateProgress, { passive: true });
 window.addEventListener("resize", updateProgress);
