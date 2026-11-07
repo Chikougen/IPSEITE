@@ -756,7 +756,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-
   .scroll-hint, .scene-index { display: none; }
   .panel-kicker { position: static; margin-bottom: 8px; }
   .hero-brand-card { width: min(62vw, 360px); justify-self: center; }
-  .hero-watermark { width: 100vw; height: 100vw; opacity: .06; }
+  .hero-watermark { right: 0; width: 100vw; height: 100vw; opacity: .06; }
   .atelier-image { max-height: 340px; }
   .atelier-image img { height: 340px; }
   .hero-copy p:not(.eyebrow) { font-size: 1rem; }
@@ -794,4 +794,3 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
 }
-
