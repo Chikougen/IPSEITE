@@ -142,4 +142,3 @@ $('message-form').addEventListener('submit', event => {
 });
 $('restart').addEventListener('click',reset);
 reset();
-

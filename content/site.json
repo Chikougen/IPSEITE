@@ -6,34 +6,41 @@
   },
   "seo": {
     "title": "Ipséité | Prothésiste ongulaire au Perréon",
-    "description": "Ongles en gel, gainage, semi-permanent et nail art délicat au Perréon, dans une ambiance campagne chic."
+    "description": "Gel, gainage naturel, semi-permanent et nail art simple au Perréon."
   },
   "contact": {
-    "email": "contact@ipseite.fr",
+    "email": "contact@ipseite.app",
     "phone": "+33768228951",
     "instagram": ""
   },
   "services": [
     {
-      "name": "Pose complète gel",
-      "price": "à partir de 55 EUR"
+      "name": "Pose complète gel (Rallongement)",
+      "price": "60 €"
     },
     {
-      "name": "Remplissage",
-      "price": "à partir de 42 EUR"
+      "name": "Remplissage (Dépose + pose)",
+      "price": "50 €"
     },
     {
       "name": "Gainage naturel",
-      "price": "à partir de 38 EUR"
+      "price": "45 €"
     },
     {
       "name": "Semi-permanent",
-      "price": "à partir de 30 EUR"
+      "price": "35 €"
     },
     {
-      "name": "Nail art",
-      "price": "sur devis"
+      "name": "Nail art — French / Baby boomer",
+      "price": "10 €"
+    },
+    {
+      "name": "Nail art — Autre",
+      "price": "À partir de 5 € selon demande"
+    },
+    {
+      "name": "Dépose complète",
+      "price": "20 €"
     }
   ]
 }
-

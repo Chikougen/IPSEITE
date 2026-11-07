@@ -35,4 +35,3 @@
   root.querySelector('.close').addEventListener('click',close);
   root.addEventListener('keydown',event => { if (event.key === 'Escape' && !panel.hidden) close(); });
 })();
-
