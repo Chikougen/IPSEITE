@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Trouvez la prestation Ipséité adaptée à vos envies.">
+  <title>Ipséité — Votre conseil personnalisé</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="site-header"><a href="#" class="brand" aria-label="Ipséité, accueil">ipséité<span>BEAUTÉ DES ONGLES</span></a><span class="preview-tag">Version d’essai</span></header>
+  <main>
+    <section class="intro">
+      <p class="eyebrow">LE CONSEIL IPSÉITÉ</p>
+      <h1>Vos envies.<br>Votre style.<br><em>Votre prestation.</em></h1>
+      <p class="intro-text">Une couleur discrète, des ongles plus longs, une envie de changement ? Trouvons ensemble le soin qui vous correspond.</p>
+      <div class="promise"><span class="flower" aria-hidden="true">✳</span><p>Quelques questions.<br><strong>Un conseil qui vous ressemble.</strong></p></div>
+      <p class="local-note">Démonstration locale · Prestations à confirmer avec l’institut.<br>Demande de rendez-vous par WhatsApp, à votre initiative.</p>
+    </section>
+    <section class="chat-card" aria-labelledby="chat-title">
+      <header class="chat-header"><div class="avatar" aria-hidden="true">i.</div><div><h2 id="chat-title">Votre conseillère Ipséité</h2><p>Un parcours guidé, à votre rythme</p></div><button class="icon-button" id="restart" type="button" aria-label="Recommencer le parcours" title="Recommencer">↻</button></header>
+      <div class="progress-area"><div class="progress-label"><span id="step-label">Votre envie</span><span id="step-count">1 / 3</span></div><div class="track"><div id="progress"></div></div></div>
+      <div id="conversation" role="log" aria-label="Conversation" aria-live="polite" aria-relevant="additions"></div>
+      <div id="actions"></div>
+      <form id="message-form"><label class="sr-only" for="message">Décrivez votre envie</label><input id="message" name="message" maxlength="500" placeholder="Ou décrivez votre envie…" autocomplete="off"><button type="submit" aria-label="Envoyer mon message">↑</button></form>
+      <footer class="chat-footer">Conseil automatisé · Sans création de compte</footer>
+    </section>
+  </main>
+  <script type="module" src="./chat.js"></script>
+</body>
+</html>
