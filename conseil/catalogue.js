@@ -22,3 +22,4 @@ export function recommend(a) {
     ? 'Le choix final sera confirmé lors du rendez-vous.'
     : 'Une pose est déjà présente : une dépose ou un remplissage pourra être nécessaire, à confirmer avec l’institut.' };
 }
+
